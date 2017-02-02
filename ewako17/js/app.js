@@ -86,7 +86,7 @@ function handleImage(e) {
         }
 		canvas.width = width;
         canvas.height = height;
-        canvas.getContext('2d').drawImage(image, 20, 50, width-40, height-120);
+        canvas.getContext('2d').drawImage(image, 30, 30, width-60, height-60);
         var dataUrl = canvas.toDataURL('image/jpeg');
         basic.croppie('bind', {
             url: dataUrl,
