@@ -30,8 +30,8 @@ function popupResult(result) {
  */
 function drawFrame() {
   var img = new Image();
-  img.src = 'images/frame.png';
-
+  img.setAttribute('crossOrigin', 'anonymous');
+  img.src = 'images/frame.png';  
   img.onload = function() {
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     popupResult({
@@ -111,7 +111,7 @@ function downloadCanvas(link, canvasId, filename) {
 }
 
 $('#downloadlink').on('click', '.sweet-alert', function() {
-  downloadCanvas(this, 'imageCanvas', 'ewako.jpg');
+  downloadCanvas(this, 'imageCanvas', 'ewako17.jpg');
 });
 
 
@@ -131,7 +131,7 @@ $('.basic-result').on('click', function(e) {
   e.preventDefault();
   console.log('OK');
   var downloadButton = this;
-	basic.croppie('result', {
+  basic.croppie('result', {
 		type: 'canvas',
 	}).then(function (resp) {
 		drawProfPict(resp);
