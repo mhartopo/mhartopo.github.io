@@ -13,7 +13,7 @@ function popupResult(result) {
   }
   if (result.src) {
   	html = '<img src="' + result.src + '" />' +
-    '<a href="'+ result.src +'" id="downloadlink" class="button" download="ewako.jpg">Download</a>' +
+    '<a href="'+ result.src +'" id="downloadlink" class="button" download="ewako17.jpg">Download</a>' +
     '<button class="confirm button" tabindex="1">Cancel</button>';
   }
   swal({
@@ -34,10 +34,10 @@ function drawFrame() {
 
   img.onload = function() {
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-	console.log("load ok")
     popupResult({
 			src: document.getElementById('imageCanvas').toDataURL('image/png'),
 		});
+	console.log('popup ok');
   }
 }
 
@@ -111,7 +111,7 @@ function downloadCanvas(link, canvasId, filename) {
 }
 
 $('#downloadlink').on('click', '.sweet-alert', function() {
-  downloadCanvas(this, 'imageCanvas', 'arkavidia.jpg');
+  downloadCanvas(this, 'imageCanvas', 'ewako.jpg');
 });
 
 
