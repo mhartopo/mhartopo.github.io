@@ -30,7 +30,7 @@ function popupResult(result) {
  */
 function drawFrame() {
   var img = new Image();
-  img.setAttribute('crossOrigin', 'anonymous');
+  img.crossOrigin = "Anonymous";
   img.src = 'images/frame.png';  
   img.onload = function() {
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
@@ -84,9 +84,9 @@ function handleImage(e) {
                 height = max_size;
             }
         }
-        canvas.width = width;
+		canvas.width = width;
         canvas.height = height;
-        canvas.getContext('2d').drawImage(image, 0, 0, width, height);
+        canvas.getContext('2d').drawImage(image, 20, 50, width-40, height-120);
         var dataUrl = canvas.toDataURL('image/jpeg');
         basic.croppie('bind', {
             url: dataUrl,
