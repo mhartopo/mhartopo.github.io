@@ -16,6 +16,13 @@ function popupResult(result) {
     '<a href="'+ result.src +'" id="downloadlink" class="button" download="ewako17.jpg">Download</a>' +
     '<button class="confirm button" tabindex="1">Cancel</button>';
   }
+  swal({
+	title: '',
+    html: true,
+    text: html,
+    animation: 'slide-from-top',
+    confirmButtonColor:	"#EA6680",
+   });
 }
 
 /**
