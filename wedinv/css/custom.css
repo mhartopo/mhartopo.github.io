@@ -1,0 +1,33 @@
+/*
+countdown timer section
+*/
+#counter {
+  color: #ffffff;
+}
+
+#counter_wrapper {
+  margin: 1.3em 0px 1em;
+}
+
+.countdown-period {
+  display: block;
+  font-size: 60%;
+}
+
+.countdown-amount {
+  display: block;
+  font-size: 200%;
+}
+
+.countdown-section {
+  display: inline-block;
+  margin-right: 8%;
+}
+
+.countdown-section:last-child {
+  margin-right: 0px;
+}
+
+.header-icon {
+	font-size: 70px
+}
