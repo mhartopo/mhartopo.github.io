@@ -425,6 +425,8 @@ nav a:focus {
 
 .service-top-agile li{
     margin: 5px auto;
+    color: #716E6E;
+    font-size: 1em; 
 }
 .service-top-agile ul{
     list-style-type: none;
