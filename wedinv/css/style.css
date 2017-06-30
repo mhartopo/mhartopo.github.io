@@ -183,6 +183,12 @@ nav a:focus {
     margin-bottom: 0.2em;
     font-family: 'Share-Regular';
 }
+.about-top-w3l h4 {
+    font-size: 2em;
+    color:#cf0c68;
+    margin-bottom: 0.2em;
+    font-family: 'Share-Regular';
+}
 .about-top-w3l p {
     font-size: 1.05em;
     color:#716E6E;
@@ -1907,6 +1913,9 @@ ul#slider p {
 }
 .about-top-w3l h3 {
     font-size: 2.2em;
+}
+.about-top-w3l h4 {
+    font-size: 1.8em;
 }
 .service-top-agile h3 {
     font-size: 2.2em;
