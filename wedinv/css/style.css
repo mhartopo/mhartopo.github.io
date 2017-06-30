@@ -189,6 +189,14 @@ nav a:focus {
     margin-bottom: 0.2em;
     font-family: 'Share-Regular';
 }
+
+.about-top-w3l h5 {
+    font-size: 1.2em;
+    color:#716E6E;
+    margin-bottom: 0.2em;
+    font-family: 'Share-Regular';
+}
+
 .about-top-w3l p {
     font-size: 1.05em;
     color:#716E6E;
@@ -375,11 +383,7 @@ nav a:focus {
 }
 /*--design end here--*/
 /*--services start here--*/
-.map {
-    display: block;
-    margin: auto;
-    width: 60%;
-}
+
 .services-agile {
     padding: 4em 0em;
 }
@@ -422,7 +426,15 @@ nav a:focus {
 .service-top-agile li{
     margin: 5px auto;
 }
+.service-top-agile ul{
+    list-style-type: none;
+}
 
+.service-top-agile img {
+    display: block;
+    margin: auto;
+    width: auto;
+}
 .service-top-agile .btn{
     align-items: center;
 }
